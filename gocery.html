@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <title>Grocery</title>
+  <!-- FAVICON ICON -->
+  <link rel="shortcut icon" href="img/icon1.jpg" type="image/x-icon">
+  <!-- icon cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- BOOTSTRAP CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <!-- BOOTSTRAP CDN FOR PRODUCT SECTION -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- CSS LINK FILE -->
+  <link rel="stylesheet" href="grocery.css">
+</head>
+
+<body>
+  <!--------------------------------------------------------------------NAVBAR SECTION--------------------------------------------------------->
+  <header class="header" id="home">
+    <div class="header-container">
+      <div class="logo">
+        <a href=""><img src="" alt="">GRcO </a>
+      </div>
+      <div class="searchBox">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" value="" class="Pke_EE" title="Search for Products, Brands and More" name="q" autocomplete="off" placeholder="Search for Products, Brands and More">
+        </div>
+      <div class="icon-container">
+        <div class="icon" id="icon">
+          <a href="form/regForm.html"><i class="fa fa-user" aria-hidden="true" id="user"><span> SignUp</span></i></a>
+          <a href="form/loginForm.html"><i class="fa fa-sign-in" aria-hidden="true"
+              id="login"><span>Login</span></i></a>
+          <a href="user.html"><i class="fa fa-user-circle-o" aria-hidden="true" id="user"><span>User</span></i></a>
+          <i class="fa fa-times" id="times" aria-hidden="true" onclick="hideMenu()"></i>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+      </div>
+    </div>
+
+    <div class="subcontainer">
+      <div class="nav">
+        <nav class="navlink">
+          <a href="#home">home |</a>
+          <a href="#item-container">Category |</a>
+          <a href="#about">about |</a>
+          <a href="#feature">feature |</a>
+          <a href="#product">product |</a>
+          <a href="#contact">contact |</a>
+          <a href="product.html"><span style="display:inline-block; border-radius: 2px; background-color:green; padding: 2px 5px;">Buy Now</span></a>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- -------------------------------------------HOME PAGE SECTION---------------------------------------------->
+  <section class="home-image">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/main4.jpg" class="d-block w-100" alt="...">
+          <div class="home-heading">
+            <h1>The Grocery U <span>Love</span></h1>
+            <p>
+              Welcome and Discover our grocery shop: fresh produce, pantry essentials, and more, all conveniently
+              available for your everyday needs.</p>
+
+            <!-- <div class="flex-div search">
+              <h6>Find the Product</h6>
+             
+              <div class="input-icon">
+                <input type="search" name="search" placeholder="Search Product">
+                <i class="fa fa-google" aria-hidden="true"></i>
+              </div>
+            </div> -->
+
+            <div class="shopNow_container">
+              <div id="banner_content">
+                <h2>We sell healthy grocery</h2>
+                <p>Flat 40% OFF on healthy grocery </p>
+                <!-- <br /> -->
+                <a href="product.html" class="hero-btn">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/main.jpg" class="d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/masala10.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+
+    </div>
+  </section>
+
+
+
+  <!-------------------------------------------------------Item categories listing----------------------------------------------------->
+  <div class="item-container" id="item-container">
+   <div class="catogory">
+    <h2>Category</h2>
+   </div>
+     
+
+    <div class="row text-center" id="item_list">
+      <div class="col-sm-4">
+        <a href="product.html#Pantry-Staples">
+          <div class="thumbnail">
+            <img src="img/Pantry Staples2.avif" alt="">
+            <div class="feature-caption">
+              <h3>Pantry Staples</h3>
+              <p>Essential ingredients for your well-stocked kitchen pantry.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-sm-4">
+        <a href="product.html#Fruits&Vegetables">
+          <div class="thumbnail">
+            <img src="img/Fruits&vegitable1.avif" alt="">
+            <div class="feature-caption">
+              <h3>Fruits&Vegetables</h3>
+              <p>OExplore our fresh selection of Fruits & Vegetables.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-sm-4">
+        <a href="product.html#Snacks&Beverages">
+          <div class="thumbnail">
+            <img src="img/Snacks4.avif" alt="">
+            <div class="feature-caption">
+              <h3>Snacks&Beverages</h3>
+              <p>Discover a tempting array of delicious snacks.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--Item categories listing end-->
+
+  <!-- ---------------------------------------------About section START----------------------------------------->
+  <div class="about" id="about">
+    <div class="all-flex">
+      <h2>About</h2>
+    </div>
+    <div class="about_container">
+      <div class="about_para">
+        <h3>About Us</h3>
+        <p>If you are looking for farm fresh fruits and vegetables, world-class breads, top-quality pulses and food grains, dairy products, then, BNS GROCERY STORE has got you covered. No more getting stuck in traffic jams, paying for parking, standing in long queues and carrying heavy bags- get everything you need, when you need, right at your doorstep. Right from fresh fruits and vegetables, rice and dals, spices and seasonings to packaged products-we have it all. Choose from a wide range of options in every category, exclusively handpicked to help you find the best quality available at lowest prices. Select a time slot for delivery and your order will be delivered right to your doorstep anywhere in India. Shopping online is now easy as every product on your monthly shopping list,is now available online at BNS GROCERY STORE.</p><br>
+        <p>To go to the home page, click on the BNS Grocery Store Icon.</p>
+        <p>Get in touch with us through the popular social media platforms.</p>
+        <button class="para-btn">Read More</button>
+      </div>
+      <div class="about_img">
+        <a href="gocery.html"><img src="img/icon1.jpg" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------------------About section END----------------------------------------->
+
+
+  <!-- ---------------------------------------------Feature section START----------------------------------------->
+  <section class="feature" id="feature">
+    <div class="all-flex">
+      <h2><span>Our Feature</span></h2>
+    </div>
+    <div class="feature_caption">
+
+      <div class="feature-col">
+        <img src="img/logo1.avif" alt="">
+        <div class="feature-caption">
+          <h2>Freash & Organic</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, accusantium!</p>
+          <button>Read More</button>
+        </div>
+      </div>
+
+      <div class="feature-col">
+        <img src="img/logo2.avif" alt="">
+        <div class="feature-caption">
+          <h2>Free Delivery</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, accusantium!</p>
+          <button class="hero-btn">Read More</button>
+        </div>
+      </div>
+
+
+      <div class="feature-col">
+        <img src="img/logo3.avif" alt="">
+        <div class="feature-caption">
+          <h2>Easy Payments</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, accusantium!</p>
+          <button class="hero-btn">Read More</button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ---------------------------------------------Feature section END----------------------------------------->
+
+
+  <!-- ---------------------------------------------Product section START----------------------------------------->
+  
+  <section class="pt-5 pb-5" id="product">
+    <div class="all-flex">
+      <h2>Our Product</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h3 class="mb-3" style="color: darkblue; font-size: 45px; font-weight: 900; border-bottom: 1px solid #ff9c15; width:50%;">Product Slide </h3>
+            </div>
+            <div class="col-6 text-right">
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+                <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="col-12">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3" >
+                                    <div class="card" style=" box-shadow: 0 0 6px rgba(0, 0,0 , 0.8);">
+                                        <img class="img-fluid" alt="100%x280" src="img/atta.jpg">
+                                        <div class="feature-caption">
+                                            <h3 class="card-title">Special title treatment</h3>
+                                            <p class="card-text">With supporting text below .</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card" style=" box-shadow: 0 0 6px rgba(0, 0,0 , 0.8);">
+                                        <img class="img-fluid" alt="100%x280" src="img/freOil.jpeg">
+                                        <div class="feature-caption">
+                                          <h3 class="card-title">Special title treatment</h3>
+                                          <p class="card-text">With supporting text below .</p>
+
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card" style=" box-shadow: 0 0 6px rgba(0, 0,0 , 0.8);">
+                                        <img class="img-fluid" alt="100%x280" src="img/riceIN.jpeg">
+                                        <div class="feature-caption">
+                                          <h3 class="card-title">Special title treatment</h3>
+                                          <p class="card-text">With supporting text below .</p>
+
+                                      </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card" style=" box-shadow: 0 0 6px rgba(0, 0,0 , 0.8);">
+                                        <img class="img-fluid" alt="100%x280" src="img/onion.jpg">
+                                        <div class="feature-caption">
+                                          <h3 class="card-title">Special title treatment</h3>
+                                          <p class="card-text">With supporting text below .</p>
+
+                                      </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card" style=" box-shadow: 0 0 6px rgba(0, 0,0 , 0.8);">
+                                        <img class="img-fluid" alt="100%x280" src="img/garlic.png">
+                                        <div class="feature-caption">
+                                          <h3 class="card-title">Special title treatment</h3>
+                                          <p class="card-text">With supporting text below .</p>
+
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card" style=" box-shadow: 0 0 6px rgba(0, 0,0 , 0.8);">
+                                        <img class="img-fluid" alt="100%x280" src="img/patato.png">
+                                        <div class="feature-caption">
+                                          <h3 class="card-title">Special title treatment</h3>
+                                          <p class="card-text">With supporting text below .</p>
+
+                                      </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card" style=" box-shadow: 0 0 6px rgba(0, 0,0 , 0.8);">
+                                        <img class="img-fluid" alt="100%x280" src="img/maggi.jpg">
+                                        <div class="feature-caption">
+                                          <h3 class="card-title">Special title treatment</h3>
+                                          <p class="card-text">With supporting text below .</p>
+
+                                      </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card" style=" box-shadow: 0 0 6px rgba(0, 0,0 , 0.8);">
+                                        <img class="img-fluid" alt="100%x280" src="img/lays.jpeg">
+                                        <div class="feature-caption">
+                                          <h3 class="card-title">Special title treatment</h3>
+                                          <p class="card-text">With supporting text below .</p>
+
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card" style=" box-shadow: 0 0 6px rgba(0, 0,0 , 0.8);">
+                                        <img class="img-fluid" alt="100%x280" src="img/col2.jpeg">
+                                        <div class="feature-caption">
+                                          <h3 class="card-title">Special title treatment</h3>
+                                          <p class="card-text">With supporting text below .</p>
+
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- ---------------------------------------------Product section END----------------------------------------->
+
+
+
+  <!-- ---------------------------------------------Contact section START----------------------------------------->
+  <div class="contact" id="contact">
+    <div class="all-flex">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="contact_container">
+      <div class="contact_img">
+        <img src="img/contact.avif" alt="">
+      </div>
+      <div class="contact_form">
+        <form action="">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Subject">
+          <input type="number" placeholder="Phone">
+          <input type="email" placeholder="email">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        </form>
+       
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------------------Contact section END----------------------------------------->
+  
+  
+  <!-- ---------------------------------------------Foot section START----------------------------------------->
+  <section class="foot">
+    <div class="footerhead">
+      <h2>Groco Store</h2>
+    </div>
+    <div class="foot-row">
+      
+      <div class="foot-column">
+        <h3>GRoCo</h3>
+        <div class="foot-socialMedia">
+          <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+          <a href=""></a>
+        </div>
+      </div>
+      
+      <div class="foot-column">
+        <h3>Quick Link</h3>
+        <p><a href="#">Home</a></p>
+        <p><a href="#product">Product</a></p>
+        <p><a href="#feature">Feature</a></p>
+        <p><a href="#contact">Contact</a></p>
+        <p><a href="product.html">Buy Now</a></p>
+      </div>
+      
+      <div class="foot-column">
+        <h3>Product</h3>
+        <p>Grocery</p>
+        <p>Packages</p>
+        <p>New</p>
+        <p>Trend</p>
+      </div>
+      
+      <div class="foot-column">
+        <h3>Category</h3>
+        <p>Beauty</p>
+        <p>Vegetables</p>
+        <p>Baby</p>
+        <p>Medicine</p>
+      </div>
+      
+      <div class="foot-column">
+        <h3>Contact</h3>
+        <p>Phone : +91 9777369163</p>
+        <p>Email :biswanath21@gmail.com</p>
+        <p>Cities we serve</p>
+        <p>Konkorada, Ganjam</p>
+      </div>
+    </div>
+  </section>
+  <!-- ---------------------------------------------Foot section END----------------------------------------->
+  
+  <!--------------------------------------------------------------Footer------------------------------------------------->
+  <div class="base">
+
+    <footer>
+      <div class="footer-container">
+        <center>
+          <p>Copyright &copy; Grocery Store.</p>
+        </center>
+      </div>
+    </footer>
+
+  </div>
+
+  <!--Footer end-->
+
+
+
+
+  <!-- BOOTSTARP CAROUSEL JAVASCRIPT CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+  </script>
+
+
+  <!-- BARS AND TIMES JAVA SCRIPT PART -->
+  <script>
+    var icon = document.getElementById("icon");
+
+    function showMenu() {
+      icon.style.top = "0";
+    }
+
+    function hideMenu() {
+      icon.style.top = "-200px";
+    }
+  </script>
+
+</body>
+
+</html>
