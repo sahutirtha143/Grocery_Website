@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Shop</title>
+
+    <!-- icon cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- BOOTSTRAP CDN FOR PRODUCT SECTION -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- CSS LINK FILE -->
+  <link rel="stylesheet" href="grocery.css">
+</head>
+<body>
+    <!--------------------------------------------------------------------NAVBAR SECTION--------------------------------------------------------->
+  <header class="header" id="home">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html"><img src="" alt="">GRcO </a>
+      </div>
+     
+      <form action="" class="searchBox">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" id="search-item" placeholder="Search for Products, Brands and More">
+      </form>
+      <div class="icon-container">
+        <div class="icon" id="icon">
+          <a href="form/regForm.html"><i class="fa fa-user" aria-hidden="true" id="user"><span> SignUp</span></i></a>
+          <a href="form/loginForm.html"><i class="fa fa-sign-in" aria-hidden="true"
+              id="login"><span>Login</span></i></a>
+          <a href="user.html"><i class="fa fa-user-circle-o" aria-hidden="true" id="user"><span>User</span></i></a>
+          <i class="fa fa-times" id="times" aria-hidden="true" onclick="hideMenu()"></i>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+      </div>
+      
+      <div class="subcontainer">
+       <div class="nav">
+        <nav class="navlink">
+          <a href="index.html">home |</a>
+          <!-- <a href="#item-container">Category |</a> -->
+          <!-- <a href="#about">about |</a> -->
+          <!-- <a href="#feature">feature |</a> -->
+          <!-- <a href="#product">product |</a> -->
+          <a href="#contact">contact |</a>
+          <a href="product.html"><span style="display:inline-block; border-radius: 2px; background-color:green; padding: 2px 5px;">Buy Now</span></a>
+        </nav>
+      </div>
+
+    </div> 
+  </header>
+
+  <!-- ---------------------------------------------Contact section START----------------------------------------->
+  <div class="contact" id="contactHtml">
+    <div class="all-flex">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="contact_container">
+      <div class="contact_img">
+        <img src="img/contact.avif" alt="">
+      </div>
+      <div class="contact_form">
+        <form action="">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Subject">
+          <input type="number" placeholder="Phone">
+          <input type="email" placeholder="email">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------------------Contact section END----------------------------------------->
+
+  <!-- ---------------------------------------------Foot section START----------------------------------------->
+  <section class="foot">
+    <div class="footerhead">
+      <h2>Groco Store</h2>
+    </div>
+    <div class="foot-row">
+
+      <div class="foot-column">
+        <h3>GRoCo</h3>
+        <div class="foot-socialMedia">
+          <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+          <a href=""></a>
+        </div>
+      </div>
+
+      <div class="foot-column">
+        <h3>Quick Link</h3>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="index.html">Product</a></p>
+        <p><a href="feature.html">Feature</a></p>
+        <p><a href="contact.html">Contact</a></p>
+        <p><a href="product.html">Buy Now</a></p>
+      </div>
+
+      <div class="foot-column">
+        <h3>Product</h3>
+        <p>Grocery</p>
+        <p>Packages</p>
+        <p>New</p>
+        <p>Trend</p>
+      </div>
+
+      <div class="foot-column">
+        <h3>Category</h3>
+        <p>Beauty</p>
+        <p>Vegetables</p>
+        <p>Baby</p>
+        <p>Medicine</p>
+      </div>
+
+      <div class="foot-column">
+        <h3>Contact</h3>
+        <p>Phone : +91 9777369163</p>
+        <p>Email :biswanath21@gmail.com</p>
+        <p>Cities we serve</p>
+        <p>Konkorada, Ganjam</p>
+      </div>
+    </div>
+  </section>
+  <!-- ---------------------------------------------Foot section END----------------------------------------->
+</body>
+</html>

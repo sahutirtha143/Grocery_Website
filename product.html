@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS LINK FILE -->
     <link rel="stylesheet" href="grocery.css">
+
+    <!-- BOOTSTRAP CDN FOR PRODUCT SECTION -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -17,8 +24,14 @@
     <header class="header">
         <div class="header-container">
             <div class="logo">
-                <a href="gocery.html"><img src="" alt="">GRcO </a>
+                <a href="index.html"><img src="" alt="">GRcO </a>
             </div>
+
+            <form action="" class="searchBox">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" id="search-item" placeholder="Search for Products, Brands and More" onkeyup="search">
+              </form>
+
             <div class="icon-container">
                 <div class="icon" id="icon">
                     <a href="form/Shopping Cart HTML.html"> <i class="fa fa-shopping-cart" aria-hidden="true"><span>Cart</span></i></a>
@@ -33,7 +46,7 @@
         <div class="subcontainer">
             <div class="nav">
                 <nav class="navlink">
-                    <a href="gocery.html">home |</a>
+                    <a href="index.html">home |</a>
                     <a href="#about">about |</a>
                     <a href="#feature">feature |</a>
                     <a href="#prduct">product |</a>
@@ -47,7 +60,7 @@
 
     <!-- -------------------------------------------------------Product Header Start ----------------------------------------------------->
     <div class="product-heading" id="product-heading">
-        <img src="img/product4.avif" alt="">
+        <img src="img/main.jpg" alt="">
         <div class="product-heading-container">
             <h1>Welcome to our Grocery Store!</h1>
             <p>We have the best Pantry Staples, Fruits&Vegetables and Snacks&Beverages for you. No need to hunt around,
@@ -65,7 +78,13 @@
             <h2>Pantry Staples</h2>
         </div>
 
-        <div class="product-row">
+        <form action="" class="searchBox">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" id="search-item" placeholder="Search for Products, Brands and More" onkeyup="search1()">
+          </form>
+
+
+        <div class="product-row" id="product-row">
 
             <div class="product-column">
                 <img src="img/rice3.avif" alt="">
@@ -119,7 +138,14 @@
         <div class="all-flex">
             <h2>Fruits&Vegetables</h2>
         </div>
-        <div class="product-row">
+
+        <form action="" class="searchBox">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" id="search-item" placeholder="Search for Products, Brands and More" onkeyup="search1()">
+          </form>
+
+
+        <div class="product-row" id="product-row">
             <div class="product-column">
                 <img src="img/potato1.avif" alt="">
                 <div class="caption">
@@ -170,7 +196,13 @@
         <div class="all-flex">
             <h2>Snacks&Beverages</h2>
         </div>
-        <div class="product-row">
+
+        <form action="" class="searchBox">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" id="search-item" placeholder="Search for Products, Brands and More" onkeyup="search()">
+          </form>
+
+        <div class="product-row" id="product-row">
             <div class="product-column">
                 <img src="img/popcorn1.avif" alt="">
                 <div class="caption">
@@ -274,6 +306,7 @@
         </div>
     </footer>
     <!--Footer end-->
+    <script src="product.js"></script>
 
     <!-- BARS AND TIMES JAVA SCRIPT PART -->
     <script>
@@ -287,7 +320,6 @@
             icon.style.top = "-200px";
         }
     </script>
-
 
 
 
